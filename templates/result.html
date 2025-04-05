@@ -35,38 +35,4 @@
         .fake-news {
             background-color: #f8d7da;
             color: #721c24;
-            border: 2px solid #dc3545;
-        }
-        .btn-primary {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Prediction Result</h1>
-        <p><strong>Entered News:</strong></p>
-        <p class="alert alert-secondary">{{ news_text }}</p>
-        <div class="news-box {% if result == 'Real News' %}real-news{% else %}fake-news{% endif %}">
-            <h3>
-                {% if result == "Real News" %}
-                    ✅ This News is REAL
-                {% else %}
-                    ❌ This News is FAKE
-                {% endif %}
-            </h3>
-        </div>
-
-        <a href="/" class="btn btn-primary">🔄 Try Again</a>
-    </div>
-
-</body>
-</html>
+            border: 2
